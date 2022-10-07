@@ -166,6 +166,7 @@ ReceivePacket(Ptr<Socket> socket)
 int 
 main (int argc, char *argv[])
 {
+	///////////////////////////////////////////////    Initialize Input Params    ////////////////////////////////////////////////////////
     LogComponentEnable ("v2x_communication_mode_4", LOG_INFO);
 
     // Initialize some values
@@ -259,6 +260,8 @@ main (int argc, char *argv[])
     ConfigStore inputConfig; 
     inputConfig.ConfigureDefaults(); 
 
+    ///////////////////////////////////////////////    Initialize the Nodes Positions and Mobility    //////////////////////////////////////////////////
+
     // Create node container to hold all UEs 
     NodeContainer ueAllNodes; 
 
@@ -296,6 +299,7 @@ main (int argc, char *argv[])
         ns2.Install();
     }
 
+    ///////////////////////////////////////////////    Initialize the Nodes     ////////////////////////////////////////////////////////
 
     NS_LOG_INFO ("Creating helpers...");
     // EPC
