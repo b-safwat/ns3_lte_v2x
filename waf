@@ -1,6 +1,7 @@
-#!/usr/bin/env python
+#!/home/bassel/anaconda3/envs/py2/bin/python2.7
 # encoding: ISO8859-1
 # Thomas Nagy, 2005-2016
+#!/usr/bin/env python
 
 """
 Redistribution and use in source and binary forms, with or without
